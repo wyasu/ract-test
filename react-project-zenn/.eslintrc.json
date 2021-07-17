@@ -7,7 +7,7 @@
     "commonjs": true
   },
   // パーサー
-  // "parser": "@typescript-eslint/parser",
+  "parser": "babel-eslint",
   // jsx を使います
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -23,20 +23,18 @@
       "version": "detect"
     }
   },
-  // "plugins": ["react-hooks", "react", "@typescript-eslint"],
   "plugins": ["react-hooks", "react"],
   // 基本的にルールは recommended に従う
   // prettier は配列の最後尾に書く
   "extends": [
     "eslint:recommended",
-    // "plugin:@typescript-eslint/eslint-recommended",
-    // "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "prettier"
-  ]
-  // "rules": {
-  //   // TypeScirpt なので prop-types は要らない
-  //   "react/prop-types": "off"
-  // }
+  ],
+  "rules": {
+    // TypeScirpt なので prop-types は要らない
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
+  }
 }
