@@ -5,7 +5,7 @@ npx create-react-app react-project-zenn
 ## ESLint と Prettierインストール
 yarn add -D eslint prettier eslint-config-prettier
 
-##.eslintrc.json作成
+## .eslintrc.json作成
 ```
 {
   // 適用する環境
@@ -48,15 +48,15 @@ yarn add -D eslint prettier eslint-config-prettier
   }
 }
 ```
-##.prettierrc.json作成
+## .prettierrc.json作成
 ```
 {
   "singleQuote": true,
   "jsxBracketSameLine": true
 }
 ```
-
-##vscodeの.ettings.json
+ 
+## vscodeの.ettings.json
 ```
 {
   "editor.formatOnSave": true, // <-- prettierで整形
@@ -68,7 +68,7 @@ yarn add -D eslint prettier eslint-config-prettier
 }
 ```
 
-##package.jsonにbabel-eslint追記
+## package.jsonにbabel-eslint追記
 ```
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -78,5 +78,5 @@ yarn add -D eslint prettier eslint-config-prettier
   }
 ```
 
-参考記事
+## 参考記事
 https://zenn.dev/sprout2000/articles/9f20902d394aa2
